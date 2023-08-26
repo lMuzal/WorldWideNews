@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: url(img\newspaper.png) no-repeat center center fixed;
+  background-size: cover;
+  background-position: fixed;
+}
+
+h1, h2, ul{
+  font-family: 'Merriweather', serif;
+}
