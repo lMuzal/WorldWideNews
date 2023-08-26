@@ -91,7 +91,7 @@ return(
     <Router>
       <InfoSections/>
       <Routes>
-        <Route path='/' element={<NewsFetch country={country} section='general'/>}></Route>
+        <Route path='/worldwidenews' element={<NewsFetch country={country} section='general'/>}></Route>
         <Route path='/business' element={<Business country={country}/>}></Route>
         <Route path='/entertainment' element={<Entertainment country={country}/>}></Route>
         <Route path='/general' element={<General country={country}/>}></Route>
