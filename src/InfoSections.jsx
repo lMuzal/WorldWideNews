@@ -5,7 +5,7 @@ export default function InfoSections(){
         <nav className="sticky top-0 bg-gray-950 ">
           <ul className="flex-wrap sm:pb-1 border-b-2 flex justify-around align-top">
             <li className="px-2">
-              <Link to='business/'>Business</Link>
+              <Link to='/business'>Business</Link>
             </li>
             <li className="px-2">
               <Link to='/entertainment'>Entertainment</Link>
