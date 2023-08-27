@@ -29,8 +29,9 @@ return(
     <div className=" bg-gray-950">
     <h1 className="text-2xl sm:text-5xl"><a href='/'><span className='text-red-700'>W</span>orld <span className='text-red-700'>W</span>ide <span className='text-red-700'>N</span>ews</a></h1>
     <h2 className="pt-2 text-xs sm:text-base">Your Daily Source Of Information</h2>
-    <h2 className="border-b-2 text-xs sm:text-base">Enjoy our content, or choose your country manually<br/>
-    <select className='text-black mb-2' value={country} onChange={onCountryChange}>
+    <h2 className="border-b-2 text-xs sm:text-base">Choose your country manually<br/>
+    <select className='text-black mb-2 text-center' value={country} onChange={onCountryChange}>
+        <option value="undefined">Auto</option>
         <option value="ae">United Arab Emirates</option>
         <option value="ar">Argentina</option>
         <option value="at">Austria</option>
@@ -91,7 +92,7 @@ return(
     <Router>
       <InfoSections/>
       <Routes>
-        <Route path='/worldwidenews' element={<NewsFetch country={country} section='general'/>}></Route>
+        <Route path='/' element={<NewsFetch country={country} section='general'/>}></Route>
         <Route path='/business' element={<Business country={country}/>}></Route>
         <Route path='/entertainment' element={<Entertainment country={country}/>}></Route>
         <Route path='/general' element={<General country={country}/>}></Route>
